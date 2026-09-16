@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
+
+# Generated output (kept as a tracked placeholder in results/, but
+# ignore accidental duplicate reports)
+results/*.bak

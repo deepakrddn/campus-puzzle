@@ -1,0 +1,57 @@
+{
+  "_comment": "Sample scaled-down dataset for 'The Campus Puzzle'. Swap this file for the real 5000-student dataset without changing any code — all algorithms read this schema.",
+
+  "classes": [
+    {"id": "C01", "name": "Intro to Programming",   "students": 180, "professor": "P01"},
+    {"id": "C02", "name": "Intro to Math",           "students": 220, "professor": "P02"},
+    {"id": "C03", "name": "Data Structures",         "students": 140, "professor": "P01"},
+    {"id": "C04", "name": "Linear Algebra",          "students": 160, "professor": "P03"},
+    {"id": "C05", "name": "Physics I",               "students": 200, "professor": "P04"},
+    {"id": "C06", "name": "Physics I Lab",           "students": 60,  "professor": "P04"},
+    {"id": "C07", "name": "Poetry Seminar",          "students": 12,  "professor": "P05"},
+    {"id": "C08", "name": "World History",           "students": 90,  "professor": "P06"},
+    {"id": "C09", "name": "Microeconomics",          "students": 150, "professor": "P07"},
+    {"id": "C10", "name": "Macroeconomics",          "students": 130, "professor": "P07"},
+    {"id": "C11", "name": "Organic Chemistry",       "students": 110, "professor": "P08"},
+    {"id": "C12", "name": "Chemistry Lab",           "students": 40,  "professor": "P08"},
+    {"id": "C13", "name": "Discrete Math",           "students": 170, "professor": "P02"},
+    {"id": "C14", "name": "Algorithms",              "students": 120, "professor": "P01"},
+    {"id": "C15", "name": "Database Systems",        "students": 95,  "professor": "P09"},
+    {"id": "C16", "name": "Operating Systems",       "students": 100, "professor": "P09"},
+    {"id": "C17", "name": "Art History",             "students": 35,  "professor": "P10"},
+    {"id": "C18", "name": "Statistics",              "students": 150, "professor": "P03"},
+    {"id": "C19", "name": "Calculus II",             "students": 190, "professor": "P02"},
+    {"id": "C20", "name": "Intro to Psychology",      "students": 210, "professor": "P11"}
+  ],
+
+  "rooms": [
+    {"id": "R01", "capacity": 250},
+    {"id": "R02", "capacity": 220},
+    {"id": "R03", "capacity": 200},
+    {"id": "R04", "capacity": 180},
+    {"id": "R05", "capacity": 150},
+    {"id": "R06", "capacity": 120},
+    {"id": "R07", "capacity": 100},
+    {"id": "R08", "capacity": 60},
+    {"id": "R09", "capacity": 40},
+    {"id": "R10", "capacity": 20}
+  ],
+
+  "student_groups": {
+    "G-CS1": ["C01", "C02", "C13", "C07"],
+    "G-CS2": ["C03", "C14", "C15", "C16"],
+    "G-MATH1": ["C02", "C04", "C19", "C18"],
+    "G-PHYS1": ["C05", "C06", "C04", "C19"],
+    "G-ECON1": ["C09", "C10", "C18", "C08"],
+    "G-CHEM1": ["C11", "C12", "C05", "C02"],
+    "G-GEN1": ["C07", "C08", "C17", "C20"],
+    "G-GEN2": ["C20", "C09", "C17", "C13"]
+  },
+
+  "time_slots": [
+    "Mon-9am", "Mon-11am", "Mon-2pm",
+    "Tue-9am", "Tue-11am", "Tue-2pm",
+    "Wed-9am", "Wed-11am", "Wed-2pm",
+    "Thu-9am", "Thu-11am", "Thu-2pm"
+  ]
+}

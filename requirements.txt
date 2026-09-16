@@ -1,0 +1,9 @@
+# The Campus Puzzle uses only the Python standard library
+# (json, collections) -- no third-party dependencies required.
+#
+# Tested on Python 3.12.
+#
+# If you extend this project with visualization or a web UI, add
+# dependencies below, e.g.:
+# matplotlib>=3.8
+# flask>=3.0

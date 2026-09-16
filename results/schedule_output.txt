@@ -1,0 +1,51 @@
+======================================================================
+THE CAMPUS PUZZLE - FULL PIPELINE REPORT
+======================================================================
+
+--- Stage 1: Greedy Baseline ---
+Placed: 20 / 20
+Unplaced: []
+Wasted capacity: 1708
+
+--- Stage 2: Graph Coloring (Welsh-Powell) ---
+Colors (distinct time slots) needed: 5
+Classes with a conflict-free slot: 20
+Overflow (no slot available): []
+
+Graph coloring needed 5 distinct time slots (available: 12).
+Greedy baseline left 0 class(es) completely unplaced.
+Graph coloring assigned every class to an available conflict-free time slot.
+=> Both approaches found a fully conflict-free arrangement for this dataset; graph coloring's advantage would show up on a denser, more constrained dataset.
+
+--- Stage 3: DP Room Allocation ---
+Classes fully scheduled (slot + room): 20
+Unresolved after DP (no room fit in their slot): []
+Total wasted capacity: 158
+Improvement over greedy baseline: 1550 fewer wasted seats
+
+--- Stage 4: Backtracking Best-Effort ---
+Not needed -- Stages 2/3 already produced a complete schedule.
+
+======================================================================
+FINAL SCHEDULE
+======================================================================
+C02    Intro to Math            -> Mon-9am    | R02
+C03    Data Structures          -> Mon-9am    | R05
+C06    Physics I Lab            -> Mon-9am    | R08
+C08    World History            -> Mon-9am    | R07
+C05    Physics I                -> Mon-11am   | R03
+C13    Discrete Math            -> Mon-11am   | R04
+C14    Algorithms               -> Mon-11am   | R06
+C18    Statistics               -> Mon-11am   | R05
+C07    Poetry Seminar           -> Mon-2pm    | R10
+C09    Microeconomics           -> Mon-2pm    | R05
+C11    Organic Chemistry        -> Mon-2pm    | R06
+C15    Database Systems         -> Mon-2pm    | R07
+C19    Calculus II              -> Mon-2pm    | R03
+C01    Intro to Programming     -> Tue-9am    | R03
+C04    Linear Algebra           -> Tue-9am    | R04
+C10    Macroeconomics           -> Tue-9am    | R05
+C12    Chemistry Lab            -> Tue-9am    | R08
+C16    Operating Systems        -> Tue-9am    | R07
+C17    Art History              -> Tue-9am    | R09
+C20    Intro to Psychology      -> Tue-11am   | R02
